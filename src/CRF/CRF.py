@@ -41,11 +41,6 @@ class CRF:
 		             trainfeatures.append(self.Features.domainfindfeatureFunction(i, col, annotatedxml[1]))
 			     print col[i][1].text
 			     fontdict = annotatedxml[1]
-			     #print fontdict[int(col[i][1].attrib['font'])]
-			     print (col[i][1].attrib['height'])
-			     if i >1:
-			     	print (int(col[i][1].attrib['top'])-int(col[i-1][1].attrib['top']))
-			     #print trainfeatures 
                     collist.append([col, trainfeatures, annotatedxml[1]])
 	self.train(collist)
     
@@ -107,7 +102,7 @@ class CRF:
         sparseerrorcount = 0.0
         for tup in xrange(len(col)):
             if((predictedsequence[tup]) != int(col[tup][0])): # +1 because index starts at 0 but sparsetype starts at 1
-		print "Error " + col[tup][0] + " -- "+  str(predictedsequence[tup])
+		#print "Error " + col[tup][0] + " -- "+  str(predictedsequence[tup]) + "--  " + col[tup][1].text
                 errorcount += 1 
                 if((predictedsequence[tup]) == SparseType.NONSPARSE): #for sparse error count # domain specific 
                     sparseerrorcount += 1

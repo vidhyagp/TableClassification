@@ -1,0 +1,12 @@
+Train on more pdf documents
+MORE GOOD FEATURES
+
+Perform Cross Validation (Stratified Sampling) for getting the approximate model (due to lack of training data)
+Or try bootstrap aggregation
+
+CRF with real valued features?? [How to Normalize]
+Should label other kind of sparse lines too?
+what is the gaussian prior and L1 regularization used for?
+Learning CRF other algorithms - LBFGS, Newton Method etc? Gibbs Sampling for approximate inference??
+
+Table text followed by A or I, II or Nothing: Outliers!

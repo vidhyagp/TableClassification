@@ -1,0 +1,182 @@
+<text font="4" height="17" left="108" textpieces="0" top="337" width="702">the document, since m &#8712; [1, l] query processing time in Staccato interpolates linearly from the</text>
+<text font="4" height="15" left="108" textpieces="0" top="357" width="310">k-MAP approach to the FullSFA approach.</text>
+<text font="4" height="15" left="330" textpieces="2" top="393" width="293">k-MAP   FullSFA           Staccato</text>
+<text font="4" height="14" left="260" textpieces="5" top="420" width="398">Query  lqk        lq|&#931;| + q3(l &#8722; 1)   lqk + q3(m &#8722; 1)</text>
+<text font="4" height="14" left="260" textpieces="3" top="441" width="359">Space   lk + 16k  l|&#931;| + 16l|&#931;|      lk + 16mk</text>
+<text font="4" height="15" left="287" textpieces="2" top="481" width="242">l   :  length of the SFA&#8217;s strings</text>
+<text font="4" height="15" left="286" textpieces="2" top="501" width="244">q   :  # states in the query DFA</text>
+<text font="4" height="15" left="285" textpieces="2" top="522" width="351">k   :  # paths parameter in k-MAP, Staccato</text>
+<text font="4" height="15" left="283" textpieces="2" top="542" width="314">m  :  # chunks in Staccato (1 &#8804; m &#8804; l)</text>
+<text font="4" height="15" left="108" textpieces="0" top="576" width="702">Table 1: Space costs and query processing times for a simple chain SFA. The space indicates the</text>
+<text font="4" height="15" left="108" textpieces="0" top="596" width="259">number of bytes of storage required.</text>
+<text font="1" height="16" left="108" textpieces="0" top="657" width="26">3.1</text>
+<text font="4" height="17" left="108" textpieces="0" top="150" width="702">We experimentally verify that the Staccato approach can gracefully tradeo&#64256; between performance</text>
+<text font="4" height="15" left="108" textpieces="0" top="170" width="702">and quality. We also validate that our modi&#64257;cations to standard inverted indexing allow us to</text>
+<text font="4" height="15" left="108" textpieces="0" top="190" width="184">speedup query answering.</text>
+<text font="4" height="15" left="291" textpieces="0" top="236" width="63">Dataset</text>
+<text font="4" height="15" left="404" textpieces="2" top="226" width="231">No. of  No. of      Size as:</text>
+<text font="4" height="15" left="408" textpieces="3" top="247" width="249">Pages    SFAs    SFAs   Text</text>
+<text font="4" height="15" left="261" textpieces="4" top="267" width="396">Cong. Acts (CA)     38       1590    533MB  90kB</text>
+<text font="4" height="15" left="261" textpieces="4" top="288" width="396">English Lit. (LT)     32       1211    524MB  78kB</text>
+<text font="4" height="15" left="263" textpieces="4" top="309" width="394">DB Papers (DB)     16       627    359MB  54kB</text>
+<text font="4" height="15" left="181" textpieces="0" top="344" width="549">Table 2: Dataset Statistics. Each SFA represents one line of a scanned page.</text>
+<text font="4" height="15" left="108" textpieces="0" top="631" width="702">The current implementation is single threaded so as to assess the impact of the approximation.</text>
+<text font="4" height="15" left="108" textpieces="0" top="651" width="702">All experiments are run on Intel Core-2 E6600 machines with 2.4 GHz CPU, 4 GB RAM, running</text>
+<text font="4" height="15" left="108" textpieces="0" top="672" width="702">Linux 2.6.18-194. The runtimes are averaged over 7 runs. The notation for the parameters is</text>
+<text font="4" height="15" left="108" textpieces="0" top="692" width="168">summarized in Table 3.</text>
+<text font="4" height="15" left="271" textpieces="1" top="725" width="279">Symbol                 Description</text>
+<text font="4" height="15" left="297" textpieces="1" top="746" width="353">k      # Paths Parameter (k-MAP, Staccato)</text>
+<text font="4" height="15" left="295" textpieces="1" top="767" width="331">m          # Chunks Parameter (Staccato)</text>
+<text font="4" height="15" left="267" textpieces="1" top="788" width="316">N umAns            # Answers queried for</text>
+<text font="4" height="15" left="336" textpieces="0" top="822" width="246">Table 3: Notations for Parameters</text>
+<text font="4" height="15" left="108" textpieces="0" top="860" width="702">We set N umAns = 100, which is greater than the number of answers in the ground truth for all</text>
+<text font="4" height="15" left="108" textpieces="0" top="113" width="702">and performance of 21 queries on the three datasets. We formulated these queries based on our</text>
+<text font="4" height="15" left="108" textpieces="0" top="133" width="702">discussions with practitioners in companies and researchers in the social sciences who work with</text>
+<text font="4" height="15" left="108" textpieces="0" top="154" width="702">real-world OCR data. Table 4 presents a subset of these results (the rest are presented in the full</text>
+<text font="4" height="15" left="108" textpieces="0" top="174" width="188">version of this paper [36]).</text>
+<text font="4" height="15" left="258" textpieces="4" top="211" width="402">Query     MAP     k-MAP    FullSFA   Staccato</text>
+<text font="4" height="15" left="424" textpieces="0" top="232" width="135">Precision/Recall</text>
+<text font="4" height="15" left="264" textpieces="4" top="253" width="390">CA1    1.00/0.79  1.00/0.79  0.14/1.00    1.00/0.79</text>
+<text font="4" height="15" left="264" textpieces="4" top="273" width="390">CA2    1.00/0.28  1.00/0.52  0.25/1.00    0.73/0.76</text>
+<text font="4" height="15" left="266" textpieces="4" top="294" width="388">LT1    0.96/0.87  0.96/0.90  0.92/1.00    0.97/0.91</text>
+<text font="4" height="15" left="266" textpieces="4" top="314" width="388">LT2    0.78/0.66  0.76/0.66  0.31/0.97    0.44/0.81</text>
+<text font="4" height="15" left="264" textpieces="4" top="335" width="390">DB1    0.93/0.75  0.90/0.92  0.67/0.99    0.90/0.96</text>
+<text font="4" height="15" left="264" textpieces="4" top="356" width="390">DB2    0.96/0.76  0.96/0.76  0.33/1.00    0.91/0.97</text>
+<text font="4" height="15" left="404" textpieces="0" top="376" width="176">Runtime (in seconds)</text>
+<text font="4" height="15" left="264" textpieces="4" top="397" width="372">CA1      0.17        0.75       86.72        2.87</text>
+<text font="4" height="15" left="264" textpieces="4" top="418" width="372">CA2      0.18        0.84      150.35        3.36</text>
+<text font="4" height="15" left="266" textpieces="4" top="439" width="370">LT1      0.13        0.19       83.78        1.98</text>
+<text font="4" height="15" left="266" textpieces="4" top="459" width="370">LT2      0.14        0.24      155.45        2.88</text>
+<text font="4" height="15" left="264" textpieces="4" top="480" width="372">DB1      0.07        0.29       40.73        0.75</text>
+<text font="4" height="15" left="264" textpieces="4" top="500" width="372">DB2      0.07        0.33      619.31        0.86</text>
+<text font="4" height="15" left="108" textpieces="0" top="535" width="702">Table 4: Recall and runtime results across datasets. The keyword queries are &#8211; CA1: &#8216;P resident&#8217;,</text>
+<text font="4" height="15" left="134" textpieces="1" top="122" width="190">Approach     Table Name</text>
+<text font="4" height="15" left="438" textpieces="0" top="111" width="74">Attributes</text>
+<text font="4" height="15" left="615" textpieces="0" top="122" width="93">Primary Key</text>
+<text font="4" height="15" left="353" textpieces="1" top="132" width="162">Name            Type</text>
+<text font="4" height="15" left="166" textpieces="1" top="177" width="158">-         MasterData</text>
+<text font="4" height="15" left="353" textpieces="1" top="156" width="202">DataKey        INTEGER</text>
+<text font="4" height="15" left="615" textpieces="2" top="177" width="-25">DataKey                                              DocName       VARCHAR(50)</text>
+<text font="4" height="15" left="353" textpieces="1" top="197" width="202">SFANum        INTEGER</text>
+<text font="4" height="15" left="142" textpieces="1" top="242" width="180">k-MAP      kMAPData</text>
+<text font="4" height="15" left="353" textpieces="1" top="221" width="202">DataKey        INTEGER</text>
+<text font="4" height="15" left="615" textpieces="2" top="242" width="-60">DataKey, LineNum                                                         LineNum        INTEGER</text>
+<text font="4" height="15" left="353" textpieces="1" top="262" width="172">Data            TEXT</text>
+<text font="4" height="15" left="353" textpieces="1" top="282" width="189">LogProb         FLOAT8</text>
+<text font="4" height="15" left="139" textpieces="1" top="317" width="189">FullSFA     FullSFAData</text>
+<text font="4" height="15" left="353" textpieces="1" top="307" width="202">DataKey        INTEGER</text>
+<text font="4" height="15" left="615" textpieces="0" top="317" width="64">DataKey</text>
+<text font="4" height="15" left="353" textpieces="1" top="327" width="156">SFABlob        OID</text>
+<text font="4" height="14" left="127" textpieces="0" top="416" width="77">Staccato</text>
+<text font="4" height="15" left="233" textpieces="0" top="392" width="96">StaccatoData</text>
+<text font="4" height="15" left="353" textpieces="1" top="352" width="202">DataKey        INTEGER</text>
+<text font="4" height="15" left="615" textpieces="0" top="384" width="159">DataKey, ChunkNum,</text>
+<text font="4" height="15" left="615" textpieces="0" top="404" width="66">LineNum</text>
+<text font="4" height="15" left="353" textpieces="1" top="372" width="202">ChunkNum      INTEGER</text>
+<text font="4" height="15" left="353" textpieces="1" top="392" width="202">LineNum        INTEGER</text>
+<text font="4" height="15" left="353" textpieces="1" top="413" width="172">Data            TEXT</text>
+<text font="4" height="15" left="353" textpieces="1" top="433" width="189">LogProb         FLOAT8</text>
+<text font="4" height="15" left="228" textpieces="0" top="464" width="107">StaccatoGraph</text>
+<text font="4" height="15" left="353" textpieces="1" top="453" width="202">DataKey        INTEGER</text>
+<text font="4" height="15" left="615" textpieces="0" top="463" width="64">DataKey</text>
+<text font="4" height="15" left="353" textpieces="1" top="474" width="156">GraphBlob      OID</text>
+<text font="4" height="15" left="166" textpieces="1" top="508" width="163">-        GroundTruth</text>
+<text font="4" height="15" left="353" textpieces="1" top="498" width="202">DataKey        INTEGER</text>
+<text font="4" height="15" left="615" textpieces="0" top="508" width="64">DataKey</text>
+<text font="4" height="15" left="353" textpieces="1" top="519" width="172">Data            TEXT</text>
+<text font="4" height="15" left="285" textpieces="0" top="553" width="348">Table 5: Relational schema for storing SFA data</text>
+<text font="3" height="19" left="108" textpieces="1" top="599" width="285">H  Extended Experiments</text>
+<text font="4" height="15" left="108" textpieces="0" top="639" width="702">We now present more experimental results relating to runtimes and answer quality for the &#64257;lescans,</text>
+<text font="4" height="15" left="108" textpieces="0" top="659" width="702">as well as some aspects of the inverted indexing. The queries we use are listed in Table 6, along</text>
+<text font="4" height="15" left="108" textpieces="0" top="680" width="565">with the number of ground truth answers for each on their respective datasets.</text>
+<text font="1" height="16" left="108" textpieces="1" top="722" width="228">H.1  Recall and Runtime</text>
+<text font="4" height="15" left="108" textpieces="0" top="754" width="702">Table 7 presents the precision and recall results of the queries, while Table 8 presents the respective</text>
+<text font="4" height="15" left="108" textpieces="0" top="775" width="702">runtime results. The values of the parameters are m = 40, k = 50 and N umAns = 100. As in</text>
+<text font="4" height="17" left="108" textpieces="0" top="795" width="702">Section 5, here too we see that Staccato lies between k-MAP and FullSFA on both recall and</text>
+<text font="4" height="15" left="108" textpieces="0" top="815" width="702">runtime. The precision too exhibits a similar trend. Again, the FullSFA approach is upto three</text>
+<text font="4" height="15" left="108" textpieces="0" top="836" width="702">orders of magnitude slower than MAP but achieves perfect recall on most queries, though precision</text>
+<text font="4" height="17" left="108" textpieces="0" top="856" width="702">is lower. Interestingly, on some queries in the DB dataset (e.g., DB3 and DB6), Staccato recall is</text>
+<text font="4" height="15" left="108" textpieces="0" top="876" width="702">close to 1.0 while the runtime is about two orders of magnitude lower than FullSFA. Another thing</text>
+<text font="4" height="17" left="108" textpieces="0" top="897" width="702">to note is that the recall increase for k-MAP and Staccato (over MAP) is more pronounced in</text>
+<text font="4" height="15" left="108" textpieces="0" top="917" width="702">DB and LT than CA. We can also see that keyword queries can have lower recall than some regex</text>
+<text font="4" height="15" left="108" textpieces="0" top="937" width="205">queries (e.g., LT3 and DB2).</text>
+<text font="4" height="15" left="451" textpieces="0" top="1069" width="16">33</text>
+<text font="4" height="15" left="276" textpieces="3" top="329" width="366">Dataset  S.No.         Query         # in Truth</text>
+<text font="4" height="15" left="292" textpieces="0" top="415" width="24">CA</text>
+<text font="4" height="15" left="365" textpieces="2" top="354" width="245">1          Attorney            28</text>
+<text font="4" height="15" left="365" textpieces="2" top="374" width="250">2        Commission          128</text>
+<text font="4" height="15" left="365" textpieces="2" top="394" width="245">3        employment          73</text>
+<text font="4" height="15" left="365" textpieces="2" top="415" width="245">4         President            14</text>
+<text font="4" height="15" left="365" textpieces="2" top="435" width="245">5       United States         52</text>
+<text font="4" height="15" left="365" textpieces="2" top="455" width="245">6    Public Law (8|9)\d       55</text>
+<text font="4" height="15" left="365" textpieces="2" top="476" width="245">7      U.S.C. 2\d\d\d         25</text>
+<text font="4" height="15" left="292" textpieces="0" top="561" width="24">DB</text>
+<text font="4" height="15" left="365" textpieces="2" top="500" width="245">1          accuracy            65</text>
+<text font="4" height="15" left="365" textpieces="2" top="520" width="245">2         con&#64257;dence           36</text>
+<text font="4" height="15" left="365" textpieces="2" top="541" width="245">3          database            43</text>
+<text font="4" height="15" left="365" textpieces="2" top="561" width="245">4           lineage             83</text>
+<text font="4" height="15" left="365" textpieces="2" top="581" width="245">5            Trio              68</text>
+<text font="4" height="15" left="365" textpieces="2" top="602" width="245">6         Sec(\x) &#8727; d           33</text>
+<text font="4" height="15" left="365" textpieces="2" top="622" width="245">7        \x\x\x\d\d          47</text>
+<text font="4" height="15" left="293" textpieces="0" top="708" width="21">LT</text>
+<text font="4" height="15" left="365" textpieces="2" top="647" width="245">1        Brinkmann           92</text>
+<text font="4" height="15" left="365" textpieces="2" top="667" width="245">2           Hitler              12</text>
+<text font="4" height="15" left="365" textpieces="2" top="687" width="245">3         Jonathan            18</text>
+<text font="4" height="15" left="365" textpieces="2" top="708" width="245">4          Kerouac            21</text>
+<text font="4" height="15" left="365" textpieces="2" top="728" width="241">5        Third Reich           7</text>
+<text font="4" height="15" left="365" textpieces="2" top="748" width="245">6       19\d\d, \d\d          32</text>
+<text font="4" height="15" left="365" textpieces="2" top="768" width="245">7       spontan(\x)&#8727;          99</text>
+<text font="4" height="15" left="299" textpieces="0" top="803" width="315">Table 6: Queries and ground truth numbers</text>
+<text font="4" height="15" left="451" textpieces="0" top="1069" width="16">34</text>
+<text font="4" height="15" left="258" textpieces="0" top="325" width="44">Query</text>
+<text font="4" height="15" left="458" textpieces="0" top="315" width="69">Approach</text>
+<text font="4" height="15" left="339" textpieces="3" top="335" width="321">MAP     k-MAP    FullSFA   Staccato</text>
+<text font="4" height="15" left="264" textpieces="4" top="360" width="390">CA1    1.00/0.93  1.00/0.93  0.28/1.00    0.87/0.96</text>
+<text font="4" height="15" left="264" textpieces="4" top="381" width="390">CA2    1.00/0.78  1.00/0.78  1.00/0.78    1.00/0.78</text>
+<text font="4" height="15" left="264" textpieces="4" top="402" width="390">CA3    1.00/0.90  1.00/0.90  0.73/1.00    0.97/0.93</text>
+<text font="4" height="15" left="264" textpieces="4" top="423" width="390">CA4    1.00/0.79  1.00/0.79  0.14/1.00    0.85/0.79</text>
+<text font="4" height="15" left="264" textpieces="4" top="444" width="390">CA5    1.00/0.77  1.00/0.79  0.52/1.00    1.00/0.88</text>
+<text font="4" height="15" left="264" textpieces="4" top="465" width="390">CA6    1.00/0.87  1.00/0.96  0.55/1.00    1.00/0.98</text>
+<text font="4" height="15" left="264" textpieces="4" top="486" width="390">CA7    1.00/0.28  1.00/0.52  0.25/1.00    0.50/0.80</text>
+<text font="4" height="15" left="264" textpieces="4" top="510" width="390">DB1    1.00/0.58  0.98/0.93  0.65/1.00    0.95/0.97</text>
+<text font="4" height="15" left="264" textpieces="4" top="531" width="390">DB2    0.00/0.00  0.87/0.19  0.36/1.00    0.90/0.53</text>
+<text font="4" height="15" left="264" textpieces="4" top="552" width="390">DB3    0.85/0.67  0.87/0.79  0.43/1.00    0.90/1.00</text>
+<text font="4" height="15" left="264" textpieces="4" top="573" width="390">DB4    0.97/0.91  0.96/0.93  0.82/0.99    0.85/0.95</text>
+<text font="4" height="15" left="264" textpieces="4" top="594" width="390">DB5    0.93/0.75  0.90/0.95  0.67/0.99    0.79/0.96</text>
+<text font="4" height="15" left="264" textpieces="4" top="615" width="390">DB6    0.96/0.76  0.96/0.81  0.33/1.00    0.40/0.96</text>
+<text font="4" height="15" left="264" textpieces="4" top="636" width="390">DB7    0.91/0.85  0.73/0.89  0.44/0.94    0.42/0.89</text>
+<text font="4" height="15" left="266" textpieces="4" top="660" width="388">LT1    0.96/0.87  0.96/0.90  0.92/1.00    0.94/0.91</text>
+<text font="4" height="15" left="266" textpieces="4" top="681" width="388">LT2    1.00/0.92  1.00/1.00  0.12/1.00    0.12/1.00</text>
+<text font="4" height="15" left="266" textpieces="4" top="702" width="388">LT3    1.00/0.11  1.00/0.17  0.18/1.00    0.94/0.83</text>
+<text font="4" height="15" left="266" textpieces="4" top="723" width="388">LT4    0.81/0.62  0.86/0.90  0.21/1.00    0.74/0.95</text>
+<text font="4" height="15" left="266" textpieces="4" top="744" width="388">LT5    1.00/0.29  1.00/1.00  0.07/1.00    1.00/1.00</text>
+<text font="4" height="15" left="266" textpieces="4" top="765" width="388">LT6    0.77/0.65  0.76/0.67  0.31/0.97    0.26/0.81</text>
+<text font="4" height="15" left="266" textpieces="4" top="786" width="388">LT7    0.84/0.88  0.83/0.88  0.83/0.88    0.83/0.88</text>
+<text font="4" height="15" left="328" textpieces="0" top="820" width="257">Table 7: Precision and recall results</text>
+<text font="4" height="15" left="451" textpieces="0" top="1069" width="16">35</text>
+<text font="4" height="15" left="283" textpieces="0" top="325" width="44">Query</text>
+<text font="4" height="15" left="458" textpieces="0" top="315" width="69">Approach</text>
+<text font="4" height="15" left="350" textpieces="3" top="335" width="285">MAP  k-MAP  FullSFA   Staccato</text>
+<text font="4" height="15" left="289" textpieces="4" top="360" width="322">CA1    0.17     0.82     81.54        4.38</text>
+<text font="4" height="15" left="289" textpieces="4" top="381" width="322">CA2    0.17     0.96     91.84        4.93</text>
+<text font="4" height="15" left="289" textpieces="4" top="402" width="322">CA3    0.17     0.96     91.85        4.94</text>
+<text font="4" height="15" left="289" textpieces="4" top="423" width="322">CA4    0.17     0.89     86.72        4.63</text>
+<text font="4" height="15" left="289" textpieces="4" top="444" width="322">CA5    0.18     1.16     106.17       5.97</text>
+<text font="4" height="15" left="289" textpieces="4" top="465" width="322">CA6    0.18     1.17     125.63       5.98</text>
+<text font="4" height="15" left="289" textpieces="4" top="486" width="322">CA7    0.18     1.05     150.35       5.40</text>
+<text font="4" height="15" left="289" textpieces="4" top="510" width="322">DB1    0.07     0.44     56.42        1.61</text>
+<text font="4" height="15" left="289" textpieces="4" top="531" width="322">DB2    0.07     0.51     62.89        1.81</text>
+<text font="4" height="15" left="289" textpieces="4" top="552" width="322">DB3    0.07     0.43     54.92        1.59</text>
+<text font="4" height="15" left="289" textpieces="4" top="573" width="322">DB4    0.07     0.40     51.45        1.48</text>
+<text font="4" height="15" left="289" textpieces="4" top="594" width="322">DB5    0.07     0.42     40.72        1.21</text>
+<text font="4" height="15" left="289" textpieces="4" top="615" width="322">DB6    0.07     0.35     619.31       1.39</text>
+<text font="4" height="15" left="289" textpieces="4" top="636" width="322">DB7    0.07     0.31    1738.78      1.37</text>
+<text font="4" height="15" left="291" textpieces="4" top="660" width="320">LT1    0.14     0.73     83.78        3.27</text>
+<text font="4" height="15" left="291" textpieces="4" top="681" width="320">LT2    0.13     0.59     69.68        2.72</text>
+<text font="4" height="15" left="291" textpieces="4" top="702" width="320">LT3    0.14     0.71     79.76        3.10</text>
+<text font="4" height="15" left="291" textpieces="4" top="723" width="320">LT4    0.14     0.65     74.58        2.90</text>
+<text font="4" height="15" left="291" textpieces="4" top="744" width="320">LT5    0.14     0.85     93.35        3.72</text>
+<text font="4" height="15" left="291" textpieces="4" top="765" width="320">LT6    0.14     1.02     155.45       4.52</text>
+<text font="4" height="15" left="291" textpieces="4" top="786" width="320">LT7    0.15     1.00     887.19       4.23</text>
+<text font="4" height="15" left="271" textpieces="0" top="820" width="369">Table 8: Runtime results. Runtimes are in seconds.</text>
+<text font="4" height="15" left="451" textpieces="0" top="1069" width="16">36</text>

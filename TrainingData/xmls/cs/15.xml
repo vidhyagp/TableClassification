@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pdf2xml SYSTEM "pdf2xml.dtd">
+
+<pdf2xml>
+<page number="1" position="absolute" top="0" left="0" height="1188" width="918">
+	<fontspec id="0" size="23" family="Times" color="#000000"/>
+	<fontspec id="1" size="15" family="Times" color="#000000"/>
+	<fontspec id="2" size="12" family="Times" color="#000000"/>
+	<fontspec id="3" size="19" family="Times" color="#000000"/>
+	<fontspec id="4" size="14" family="Times" color="#000000"/>
+	<fontspec id="5" size="9" family="Times" color="#000000"/>
+	<fontspec id="6" size="6" family="Times" color="#000000"/>
+	<fontspec id="7" size="11" family="Times" color="#000000"/>
+	<fontspec id="8" size="3" family="Times" color="#3b3b3b"/>
+	<fontspec id="9" size="13" family="Times" color="#000000"/>
+	<fontspec id="10" size="11" family="Times" color="#000000"/>
+	<fontspec id="11" size="9" family="Times" color="#000000"/>
+	<fontspec id="12" size="9" family="Times" color="#3b3b3b"/>
+<text top="337" left="108" width="702" height="17" font="4">the document, since m ∈ [1, l] query processing time in Staccato interpolates linearly from the</text>
+<text top="357" left="108" width="310" height="15" font="4">k-MAP approach to the FullSFA approach.</text>
+<text top="393" left="330" width="53" height="15" font="4">k-MAP</text>
+<text top="393" left="409" width="58" height="15" font="4">FullSFA</text>
+<text top="396" left="546" width="77" height="14" font="4">Staccato</text>
+<text top="420" left="260" width="52" height="14" font="4">Query</text>
+<text top="417" left="330" width="22" height="15" font="4">lqk</text>
+<text top="417" left="409" width="61" height="15" font="4">lq|Σ| + q</text>
+<text top="415" left="470" width="6" height="11" font="5">3</text>
+<text top="417" left="478" width="46" height="15" font="4">(l − 1)</text>
+<text top="417" left="546" width="49" height="15" font="4">lqk + q</text>
+<text top="415" left="596" width="6" height="11" font="5">3</text>
+<text top="417" left="603" width="55" height="15" font="4">(m − 1)</text>
+<text top="441" left="260" width="47" height="14" font="4">Space</text>
+<text top="438" left="330" width="59" height="15" font="4">lk + 16k</text>
+<text top="438" left="409" width="89" height="15" font="4">l|Σ| + 16l|Σ|</text>
+<text top="438" left="546" width="73" height="15" font="4">lk + 16mk</text>
+<text top="481" left="287" width="5" height="15" font="4">l</text>
+<text top="481" left="315" width="5" height="15" font="4">:</text>
+<text top="481" left="338" width="191" height="15" font="4">length of the SFA’s strings</text>
+<text top="501" left="286" width="7" height="15" font="4">q</text>
+<text top="501" left="315" width="5" height="15" font="4">:</text>
+<text top="501" left="338" width="192" height="15" font="4"># states in the query DFA</text>
+<text top="522" left="285" width="9" height="15" font="4">k</text>
+<text top="522" left="315" width="5" height="15" font="4">:</text>
+<text top="522" left="338" width="298" height="17" font="4"># paths parameter in k-MAP, Staccato</text>
+<text top="542" left="283" width="14" height="15" font="4">m</text>
+<text top="542" left="315" width="5" height="15" font="4">:</text>
+<text top="542" left="338" width="259" height="17" font="4"># chunks in Staccato (1 ≤ m ≤ l)</text>
+<text top="576" left="108" width="702" height="15" font="4">Table 1: Space costs and query processing times for a simple chain SFA. The space indicates the</text>
+<text top="596" left="108" width="259" height="15" font="4">number of bytes of storage required.</text>
+<text top="657" left="108" width="26" height="16" font="1">3.1</text>
+</page>
+<page number="8" position="absolute" top="0" left="0" height="1188" width="918">
+	<fontspec id="13" size="2" family="Times" color="#3b3b3b"/>
+	<fontspec id="14" size="11" family="Times" color="#000000"/>
+	<fontspec id="15" size="7" family="Times" color="#000000"/>
+	<fontspec id="16" size="5" family="Times" color="#000000"/>
+	<fontspec id="17" size="5" family="Times" color="#000000"/>
+	<fontspec id="18" size="1" family="Times" color="#3b3b3b"/>
+	<fontspec id="19" size="10" family="Times" color="#000000"/>
+	<fontspec id="20" size="8" family="Times" color="#0000ff"/>
+	<fontspec id="21" size="8" family="Times" color="#ff0000"/>
+	<fontspec id="22" size="8" family="Times" color="#000000"/>
+<text top="150" left="108" width="702" height="17" font="4">We experimentally verify that the Staccato approach can gracefully tradeoﬀ between performance</text>
+<text top="170" left="108" width="702" height="15" font="4">and quality. We also validate that our modiﬁcations to standard inverted indexing allow us to</text>
+<text top="190" left="108" width="184" height="15" font="4">speedup query answering.</text>
+<text top="236" left="291" width="63" height="15" font="4">Dataset</text>
+<text top="226" left="404" width="53" height="15" font="4">No. of</text>
+<text top="226" left="477" width="53" height="15" font="4">No. of</text>
+<text top="226" left="574" width="61" height="15" font="4">Size as:</text>
+<text top="247" left="408" width="47" height="15" font="4">Pages</text>
+<text top="247" left="484" width="42" height="15" font="4">SFAs</text>
+<text top="247" left="555" width="42" height="15" font="4">SFAs</text>
+<text top="247" left="620" width="37" height="15" font="4">Text</text>
+<text top="267" left="261" width="124" height="15" font="4">Cong. Acts (CA)</text>
+<text top="267" left="423" width="16" height="15" font="4">38</text>
+<text top="267" left="488" width="33" height="15" font="4">1590</text>
+<text top="267" left="550" width="51" height="15" font="4">533MB</text>
+<text top="267" left="620" width="37" height="15" font="4">90kB</text>
+<text top="288" left="261" width="125" height="15" font="4">English Lit. (LT)</text>
+<text top="288" left="423" width="16" height="15" font="4">32</text>
+<text top="288" left="488" width="33" height="15" font="4">1211</text>
+<text top="288" left="550" width="51" height="15" font="4">524MB</text>
+<text top="288" left="620" width="37" height="15" font="4">78kB</text>
+<text top="309" left="263" width="120" height="15" font="4">DB Papers (DB)</text>
+<text top="309" left="423" width="16" height="15" font="4">16</text>
+<text top="309" left="492" width="25" height="15" font="4">627</text>
+<text top="309" left="550" width="51" height="15" font="4">359MB</text>
+<text top="309" left="620" width="37" height="15" font="4">54kB</text>
+<text top="344" left="181" width="549" height="15" font="4">Table 2: Dataset Statistics. Each SFA represents one line of a scanned page.</text>
+<text top="631" left="108" width="702" height="15" font="4">The current implementation is single threaded so as to assess the impact of the approximation.</text>
+<text top="651" left="108" width="702" height="15" font="4">All experiments are run on Intel Core-2 E6600 machines with 2.4 GHz CPU, 4 GB RAM, running</text>
+<text top="672" left="108" width="702" height="15" font="4">Linux 2.6.18-194. The runtimes are averaged over 7 runs. The notation for the parameters is</text>
+<text top="692" left="108" width="168" height="15" font="4">summarized in Table 3.</text>
+<text top="725" left="271" width="61" height="15" font="4">Symbol</text>
+<text top="725" left="455" width="95" height="15" font="4">Description</text>
+<text top="746" left="297" width="9" height="15" font="4">k</text>
+<text top="746" left="354" width="296" height="17" font="4"># Paths Parameter (k-MAP, Staccato)</text>
+<text top="767" left="295" width="14" height="15" font="4">m</text>
+<text top="767" left="379" width="247" height="17" font="4"># Chunks Parameter (Staccato)</text>
+<text top="788" left="267" width="68" height="15" font="4">N umAns</text>
+<text top="788" left="422" width="161" height="15" font="4"># Answers queried for</text>
+<text top="822" left="336" width="246" height="15" font="4">Table 3: Notations for Parameters</text>
+<text top="860" left="108" width="702" height="15" font="4">We set N umAns = 100, which is greater than the number of answers in the ground truth for all</text>
+</page>
+<page number="15" position="absolute" top="0" left="0" height="1188" width="918">
+<text top="113" left="108" width="702" height="15" font="4">and performance of 21 queries on the three datasets. We formulated these queries based on our</text>
+<text top="133" left="108" width="702" height="15" font="4">discussions with practitioners in companies and researchers in the social sciences who work with</text>
+<text top="154" left="108" width="702" height="15" font="4">real-world OCR data. Table 4 presents a subset of these results (the rest are presented in the full</text>
+<text top="174" left="108" width="188" height="15" font="4">version of this paper [36]).</text>
+<text top="211" left="258" width="44" height="15" font="4">Query</text>
+<text top="211" left="339" width="38" height="15" font="4">MAP</text>
+<text top="211" left="416" width="53" height="15" font="4">k-MAP</text>
+<text top="211" left="499" width="58" height="15" font="4">FullSFA</text>
+<text top="214" left="583" width="77" height="14" font="4">Staccato</text>
+<text top="232" left="424" width="135" height="15" font="4">Precision/Recall</text>
+<text top="253" left="264" width="32" height="15" font="4">CA1</text>
+<text top="253" left="325" width="66" height="15" font="4">1.00/0.79</text>
+<text top="253" left="410" width="66" height="15" font="4">1.00/0.79</text>
+<text top="253" left="494" width="66" height="15" font="4">0.14/1.00</text>
+<text top="253" left="588" width="66" height="15" font="4">1.00/0.79</text>
+<text top="273" left="264" width="32" height="15" font="4">CA2</text>
+<text top="273" left="325" width="66" height="15" font="4">1.00/0.28</text>
+<text top="273" left="410" width="66" height="15" font="4">1.00/0.52</text>
+<text top="273" left="494" width="66" height="15" font="4">0.25/1.00</text>
+<text top="273" left="588" width="66" height="15" font="4">0.73/0.76</text>
+<text top="294" left="266" width="29" height="15" font="4">LT1</text>
+<text top="294" left="325" width="66" height="15" font="4">0.96/0.87</text>
+<text top="294" left="410" width="66" height="15" font="4">0.96/0.90</text>
+<text top="294" left="494" width="66" height="15" font="4">0.92/1.00</text>
+<text top="294" left="588" width="66" height="15" font="4">0.97/0.91</text>
+<text top="314" left="266" width="29" height="15" font="4">LT2</text>
+<text top="314" left="325" width="66" height="15" font="4">0.78/0.66</text>
+<text top="314" left="410" width="66" height="15" font="4">0.76/0.66</text>
+<text top="314" left="494" width="66" height="15" font="4">0.31/0.97</text>
+<text top="314" left="588" width="66" height="15" font="4">0.44/0.81</text>
+<text top="335" left="264" width="32" height="15" font="4">DB1</text>
+<text top="335" left="325" width="66" height="15" font="4">0.93/0.75</text>
+<text top="335" left="410" width="66" height="15" font="4">0.90/0.92</text>
+<text top="335" left="494" width="66" height="15" font="4">0.67/0.99</text>
+<text top="335" left="588" width="66" height="15" font="4">0.90/0.96</text>
+<text top="356" left="264" width="32" height="15" font="4">DB2</text>
+<text top="356" left="325" width="66" height="15" font="4">0.96/0.76</text>
+<text top="356" left="410" width="66" height="15" font="4">0.96/0.76</text>
+<text top="356" left="494" width="66" height="15" font="4">0.33/1.00</text>
+<text top="356" left="588" width="66" height="15" font="4">0.91/0.97</text>
+<text top="376" left="404" width="176" height="15" font="4">Runtime (in seconds)</text>
+<text top="397" left="264" width="32" height="15" font="4">CA1</text>
+<text top="397" left="343" width="29" height="15" font="4">0.17</text>
+<text top="397" left="428" width="29" height="15" font="4">0.75</text>
+<text top="397" left="509" width="37" height="15" font="4">86.72</text>
+<text top="397" left="607" width="29" height="15" font="4">2.87</text>
+<text top="418" left="264" width="32" height="15" font="4">CA2</text>
+<text top="418" left="343" width="29" height="15" font="4">0.18</text>
+<text top="418" left="428" width="29" height="15" font="4">0.84</text>
+<text top="418" left="505" width="45" height="15" font="4">150.35</text>
+<text top="418" left="607" width="29" height="15" font="4">3.36</text>
+<text top="439" left="266" width="29" height="15" font="4">LT1</text>
+<text top="439" left="343" width="29" height="15" font="4">0.13</text>
+<text top="439" left="428" width="29" height="15" font="4">0.19</text>
+<text top="439" left="509" width="37" height="15" font="4">83.78</text>
+<text top="439" left="607" width="29" height="15" font="4">1.98</text>
+<text top="459" left="266" width="29" height="15" font="4">LT2</text>
+<text top="459" left="343" width="29" height="15" font="4">0.14</text>
+<text top="459" left="428" width="29" height="15" font="4">0.24</text>
+<text top="459" left="505" width="45" height="15" font="4">155.45</text>
+<text top="459" left="607" width="29" height="15" font="4">2.88</text>
+<text top="480" left="264" width="32" height="15" font="4">DB1</text>
+<text top="480" left="343" width="29" height="15" font="4">0.07</text>
+<text top="480" left="428" width="29" height="15" font="4">0.29</text>
+<text top="480" left="509" width="37" height="15" font="4">40.73</text>
+<text top="480" left="607" width="29" height="15" font="4">0.75</text>
+<text top="500" left="264" width="32" height="15" font="4">DB2</text>
+<text top="500" left="343" width="29" height="15" font="4">0.07</text>
+<text top="500" left="428" width="29" height="15" font="4">0.33</text>
+<text top="500" left="505" width="45" height="15" font="4">619.31</text>
+<text top="500" left="607" width="29" height="15" font="4">0.86</text>
+<text top="535" left="108" width="702" height="15" font="4">Table 4: Recall and runtime results across datasets. The keyword queries are – CA1: ‘P resident’,</text>
+</page>
+<page number="16" position="absolute" top="0" left="0" height="1188" width="918">
+	<fontspec id="28" size="5" family="Times" color="#000000"/>
+	<fontspec id="29" size="9" family="Times" color="#3b3b3b"/>
+	<fontspec id="30" size="7" family="Times" color="#000000"/>
+	<fontspec id="31" size="6" family="Times" color="#3b3b3b"/>
+	<fontspec id="32" size="7" family="Times" color="#000000"/>
+	<fontspec id="33" size="5" family="Times" color="#3b3b3b"/>
+<text top="122" left="134" width="69" height="15" font="4">Approach</text>
+<text top="122" left="238" width="86" height="15" font="4">Table Name</text>
+<text top="111" left="438" width="74" height="15" font="4">Attributes</text>
+<text top="122" left="615" width="93" height="15" font="4">Primary Key</text>
+<text top="132" left="353" width="41" height="15" font="4">Name</text>
+<text top="132" left="478" width="37" height="15" font="4">Type</text>
+<text top="177" left="166" width="5" height="15" font="4">-</text>
+<text top="177" left="239" width="85" height="15" font="4">MasterData</text>
+<text top="156" left="353" width="64" height="15" font="4">DataKey</text>
+<text top="156" left="478" width="77" height="15" font="4">INTEGER</text>
+<text top="177" left="615" width="64" height="15" font="4">DataKey</text>
+<text top="177" left="353" width="70" height="15" font="4">DocName</text>
+<text top="177" left="478" width="112" height="15" font="4">VARCHAR(50)</text>
+<text top="197" left="353" width="65" height="15" font="4">SFANum</text>
+<text top="197" left="478" width="77" height="15" font="4">INTEGER</text>
+<text top="242" left="142" width="53" height="15" font="4">k-MAP</text>
+<text top="242" left="240" width="82" height="15" font="4">kMAPData</text>
+<text top="221" left="353" width="64" height="15" font="4">DataKey</text>
+<text top="221" left="478" width="77" height="15" font="4">INTEGER</text>
+<text top="242" left="615" width="139" height="15" font="4">DataKey, LineNum</text>
+<text top="242" left="353" width="66" height="15" font="4">LineNum</text>
+<text top="242" left="478" width="77" height="15" font="4">INTEGER</text>
+<text top="262" left="353" width="35" height="15" font="4">Data</text>
+<text top="262" left="478" width="47" height="15" font="4">TEXT</text>
+<text top="282" left="353" width="61" height="15" font="4">LogProb</text>
+<text top="282" left="478" width="64" height="15" font="4">FLOAT8</text>
+<text top="317" left="139" width="58" height="15" font="4">FullSFA</text>
+<text top="317" left="235" width="93" height="15" font="4">FullSFAData</text>
+<text top="307" left="353" width="64" height="15" font="4">DataKey</text>
+<text top="307" left="478" width="77" height="15" font="4">INTEGER</text>
+<text top="317" left="615" width="64" height="15" font="4">DataKey</text>
+<text top="327" left="353" width="64" height="15" font="4">SFABlob</text>
+<text top="327" left="478" width="31" height="15" font="4">OID</text>
+<text top="416" left="127" width="77" height="14" font="4">Staccato</text>
+<text top="392" left="233" width="96" height="15" font="4">StaccatoData</text>
+<text top="352" left="353" width="64" height="15" font="4">DataKey</text>
+<text top="352" left="478" width="77" height="15" font="4">INTEGER</text>
+<text top="384" left="615" width="159" height="15" font="4">DataKey, ChunkNum,</text>
+<text top="404" left="615" width="66" height="15" font="4">LineNum</text>
+<text top="372" left="353" width="82" height="15" font="4">ChunkNum</text>
+<text top="372" left="478" width="77" height="15" font="4">INTEGER</text>
+<text top="392" left="353" width="66" height="15" font="4">LineNum</text>
+<text top="392" left="478" width="77" height="15" font="4">INTEGER</text>
+<text top="413" left="353" width="35" height="15" font="4">Data</text>
+<text top="413" left="478" width="47" height="15" font="4">TEXT</text>
+<text top="433" left="353" width="61" height="15" font="4">LogProb</text>
+<text top="433" left="478" width="64" height="15" font="4">FLOAT8</text>
+<text top="464" left="228" width="107" height="15" font="4">StaccatoGraph</text>
+<text top="453" left="353" width="64" height="15" font="4">DataKey</text>
+<text top="453" left="478" width="77" height="15" font="4">INTEGER</text>
+<text top="463" left="615" width="64" height="15" font="4">DataKey</text>
+<text top="474" left="353" width="79" height="15" font="4">GraphBlob</text>
+<text top="474" left="478" width="31" height="15" font="4">OID</text>
+<text top="508" left="166" width="5" height="15" font="4">-</text>
+<text top="508" left="233" width="96" height="15" font="4">GroundTruth</text>
+<text top="498" left="353" width="64" height="15" font="4">DataKey</text>
+<text top="498" left="478" width="77" height="15" font="4">INTEGER</text>
+<text top="508" left="615" width="64" height="15" font="4">DataKey</text>
+<text top="519" left="353" width="35" height="15" font="4">Data</text>
+<text top="519" left="478" width="47" height="15" font="4">TEXT</text>
+<text top="553" left="285" width="348" height="15" font="4">Table 5: Relational schema for storing SFA data</text>
+<text top="599" left="108" width="19" height="19" font="3">H</text>
+<text top="599" left="151" width="242" height="19" font="3">Extended Experiments</text>
+<text top="639" left="108" width="702" height="15" font="4">We now present more experimental results relating to runtimes and answer quality for the ﬁlescans,</text>
+<text top="659" left="108" width="702" height="15" font="4">as well as some aspects of the inverted indexing. The queries we use are listed in Table 6, along</text>
+<text top="680" left="108" width="565" height="15" font="4">with the number of ground truth answers for each on their respective datasets.</text>
+<text top="722" left="108" width="31" height="16" font="1">H.1</text>
+<text top="722" left="160" width="176" height="16" font="1">Recall and Runtime</text>
+<text top="754" left="108" width="702" height="15" font="4">Table 7 presents the precision and recall results of the queries, while Table 8 presents the respective</text>
+<text top="775" left="108" width="702" height="15" font="4">runtime results. The values of the parameters are m = 40, k = 50 and N umAns = 100. As in</text>
+<text top="795" left="108" width="702" height="17" font="4">Section 5, here too we see that Staccato lies between k-MAP and FullSFA on both recall and</text>
+<text top="815" left="108" width="702" height="15" font="4">runtime. The precision too exhibits a similar trend. Again, the FullSFA approach is upto three</text>
+<text top="836" left="108" width="702" height="15" font="4">orders of magnitude slower than MAP but achieves perfect recall on most queries, though precision</text>
+<text top="856" left="108" width="702" height="17" font="4">is lower. Interestingly, on some queries in the DB dataset (e.g., DB3 and DB6), Staccato recall is</text>
+<text top="876" left="108" width="702" height="15" font="4">close to 1.0 while the runtime is about two orders of magnitude lower than FullSFA. Another thing</text>
+<text top="897" left="108" width="702" height="17" font="4">to note is that the recall increase for k-MAP and Staccato (over MAP) is more pronounced in</text>
+<text top="917" left="108" width="702" height="15" font="4">DB and LT than CA. We can also see that keyword queries can have lower recall than some regex</text>
+<text top="937" left="108" width="205" height="15" font="4">queries (e.g., LT3 and DB2).</text>
+<text top="1069" left="451" width="16" height="15" font="4">33</text>
+</page>
+<page number="34" position="absolute" top="0" left="0" height="1188" width="918">
+<text top="329" left="276" width="55" height="15" font="4">Dataset</text>
+<text top="329" left="350" width="39" height="15" font="4">S.No.</text>
+<text top="329" left="453" width="44" height="15" font="4">Query</text>
+<text top="329" left="562" width="80" height="15" font="4"># in Truth</text>
+<text top="415" left="292" width="24" height="15" font="4">CA</text>
+<text top="354" left="365" width="8" height="15" font="4">1</text>
+<text top="354" left="443" width="64" height="15" font="4">Attorney</text>
+<text top="354" left="594" width="16" height="15" font="4">28</text>
+<text top="374" left="365" width="8" height="15" font="4">2</text>
+<text top="374" left="432" width="87" height="15" font="4">Commission</text>
+<text top="374" left="590" width="25" height="15" font="4">128</text>
+<text top="394" left="365" width="8" height="15" font="4">3</text>
+<text top="394" left="432" width="87" height="15" font="4">employment</text>
+<text top="394" left="594" width="16" height="15" font="4">73</text>
+<text top="415" left="365" width="8" height="15" font="4">4</text>
+<text top="415" left="442" width="67" height="15" font="4">President</text>
+<text top="415" left="594" width="16" height="15" font="4">14</text>
+<text top="435" left="365" width="8" height="15" font="4">5</text>
+<text top="435" left="427" width="98" height="15" font="4">United States</text>
+<text top="435" left="594" width="16" height="15" font="4">52</text>
+<text top="455" left="365" width="8" height="15" font="4">6</text>
+<text top="455" left="407" width="137" height="15" font="4">Public Law (8|9)\d</text>
+<text top="455" left="594" width="16" height="15" font="4">55</text>
+<text top="476" left="365" width="8" height="15" font="4">7</text>
+<text top="476" left="420" width="111" height="15" font="4">U.S.C. 2\d\d\d</text>
+<text top="476" left="594" width="16" height="15" font="4">25</text>
+<text top="561" left="292" width="24" height="15" font="4">DB</text>
+<text top="500" left="365" width="8" height="15" font="4">1</text>
+<text top="500" left="444" width="62" height="15" font="4">accuracy</text>
+<text top="500" left="594" width="16" height="15" font="4">65</text>
+<text top="520" left="365" width="8" height="15" font="4">2</text>
+<text top="520" left="439" width="74" height="15" font="4">conﬁdence</text>
+<text top="520" left="594" width="16" height="15" font="4">36</text>
+<text top="541" left="365" width="8" height="15" font="4">3</text>
+<text top="541" left="444" width="63" height="15" font="4">database</text>
+<text top="541" left="594" width="16" height="15" font="4">43</text>
+<text top="561" left="365" width="8" height="15" font="4">4</text>
+<text top="561" left="451" width="49" height="15" font="4">lineage</text>
+<text top="561" left="594" width="16" height="15" font="4">83</text>
+<text top="581" left="365" width="8" height="15" font="4">5</text>
+<text top="581" left="461" width="30" height="15" font="4">Trio</text>
+<text top="581" left="594" width="16" height="15" font="4">68</text>
+<text top="602" left="365" width="8" height="15" font="4">6</text>
+<text top="602" left="437" width="78" height="15" font="4">Sec(\x) ∗ d</text>
+<text top="602" left="594" width="16" height="15" font="4">33</text>
+<text top="622" left="365" width="8" height="15" font="4">7</text>
+<text top="621" left="432" width="86" height="15" font="4">\x\x\x\d\d</text>
+<text top="622" left="594" width="16" height="15" font="4">47</text>
+<text top="708" left="293" width="21" height="15" font="4">LT</text>
+<text top="647" left="365" width="8" height="15" font="4">1</text>
+<text top="647" left="435" width="80" height="15" font="4">Brinkmann</text>
+<text top="647" left="594" width="16" height="15" font="4">92</text>
+<text top="667" left="365" width="8" height="15" font="4">2</text>
+<text top="667" left="455" width="41" height="15" font="4">Hitler</text>
+<text top="667" left="594" width="16" height="15" font="4">12</text>
+<text top="687" left="365" width="8" height="15" font="4">3</text>
+<text top="687" left="442" width="67" height="15" font="4">Jonathan</text>
+<text top="687" left="594" width="16" height="15" font="4">18</text>
+<text top="708" left="365" width="8" height="15" font="4">4</text>
+<text top="708" left="446" width="59" height="15" font="4">Kerouac</text>
+<text top="708" left="594" width="16" height="15" font="4">21</text>
+<text top="728" left="365" width="8" height="15" font="4">5</text>
+<text top="728" left="432" width="86" height="15" font="4">Third Reich</text>
+<text top="728" left="598" width="8" height="15" font="4">7</text>
+<text top="748" left="365" width="8" height="15" font="4">6</text>
+<text top="748" left="428" width="96" height="15" font="4">19\d\d, \d\d</text>
+<text top="748" left="594" width="16" height="15" font="4">32</text>
+<text top="768" left="365" width="8" height="15" font="4">7</text>
+<text top="768" left="427" width="96" height="15" font="4">spontan(\x)∗</text>
+<text top="768" left="594" width="16" height="15" font="4">99</text>
+<text top="803" left="299" width="315" height="15" font="4">Table 6: Queries and ground truth numbers</text>
+<text top="1069" left="451" width="16" height="15" font="4">34</text>
+</page>
+<page number="35" position="absolute" top="0" left="0" height="1188" width="918">
+<text top="325" left="258" width="44" height="15" font="4">Query</text>
+<text top="315" left="458" width="69" height="15" font="4">Approach</text>
+<text top="335" left="339" width="38" height="15" font="4">MAP</text>
+<text top="335" left="416" width="53" height="15" font="4">k-MAP</text>
+<text top="335" left="499" width="58" height="15" font="4">FullSFA</text>
+<text top="338" left="583" width="77" height="14" font="4">Staccato</text>
+<text top="360" left="264" width="32" height="15" font="4">CA1</text>
+<text top="360" left="325" width="66" height="15" font="4">1.00/0.93</text>
+<text top="360" left="410" width="66" height="15" font="4">1.00/0.93</text>
+<text top="360" left="494" width="66" height="15" font="4">0.28/1.00</text>
+<text top="360" left="588" width="66" height="15" font="4">0.87/0.96</text>
+<text top="381" left="264" width="32" height="15" font="4">CA2</text>
+<text top="381" left="325" width="66" height="15" font="4">1.00/0.78</text>
+<text top="381" left="410" width="66" height="15" font="4">1.00/0.78</text>
+<text top="381" left="494" width="66" height="15" font="4">1.00/0.78</text>
+<text top="381" left="588" width="66" height="15" font="4">1.00/0.78</text>
+<text top="402" left="264" width="32" height="15" font="4">CA3</text>
+<text top="402" left="325" width="66" height="15" font="4">1.00/0.90</text>
+<text top="402" left="410" width="66" height="15" font="4">1.00/0.90</text>
+<text top="402" left="494" width="66" height="15" font="4">0.73/1.00</text>
+<text top="402" left="588" width="66" height="15" font="4">0.97/0.93</text>
+<text top="423" left="264" width="32" height="15" font="4">CA4</text>
+<text top="423" left="325" width="66" height="15" font="4">1.00/0.79</text>
+<text top="423" left="410" width="66" height="15" font="4">1.00/0.79</text>
+<text top="423" left="494" width="66" height="15" font="4">0.14/1.00</text>
+<text top="423" left="588" width="66" height="15" font="4">0.85/0.79</text>
+<text top="444" left="264" width="32" height="15" font="4">CA5</text>
+<text top="444" left="325" width="66" height="15" font="4">1.00/0.77</text>
+<text top="444" left="410" width="66" height="15" font="4">1.00/0.79</text>
+<text top="444" left="494" width="66" height="15" font="4">0.52/1.00</text>
+<text top="444" left="588" width="66" height="15" font="4">1.00/0.88</text>
+<text top="465" left="264" width="32" height="15" font="4">CA6</text>
+<text top="465" left="325" width="66" height="15" font="4">1.00/0.87</text>
+<text top="465" left="410" width="66" height="15" font="4">1.00/0.96</text>
+<text top="465" left="494" width="66" height="15" font="4">0.55/1.00</text>
+<text top="465" left="588" width="66" height="15" font="4">1.00/0.98</text>
+<text top="486" left="264" width="32" height="15" font="4">CA7</text>
+<text top="486" left="325" width="66" height="15" font="4">1.00/0.28</text>
+<text top="486" left="410" width="66" height="15" font="4">1.00/0.52</text>
+<text top="486" left="494" width="66" height="15" font="4">0.25/1.00</text>
+<text top="486" left="588" width="66" height="15" font="4">0.50/0.80</text>
+<text top="510" left="264" width="32" height="15" font="4">DB1</text>
+<text top="510" left="325" width="66" height="15" font="4">1.00/0.58</text>
+<text top="510" left="410" width="66" height="15" font="4">0.98/0.93</text>
+<text top="510" left="494" width="66" height="15" font="4">0.65/1.00</text>
+<text top="510" left="588" width="66" height="15" font="4">0.95/0.97</text>
+<text top="531" left="264" width="32" height="15" font="4">DB2</text>
+<text top="531" left="325" width="66" height="15" font="4">0.00/0.00</text>
+<text top="531" left="410" width="66" height="15" font="4">0.87/0.19</text>
+<text top="531" left="494" width="66" height="15" font="4">0.36/1.00</text>
+<text top="531" left="588" width="66" height="15" font="4">0.90/0.53</text>
+<text top="552" left="264" width="32" height="15" font="4">DB3</text>
+<text top="552" left="325" width="66" height="15" font="4">0.85/0.67</text>
+<text top="552" left="410" width="66" height="15" font="4">0.87/0.79</text>
+<text top="552" left="494" width="66" height="15" font="4">0.43/1.00</text>
+<text top="552" left="588" width="66" height="15" font="4">0.90/1.00</text>
+<text top="573" left="264" width="32" height="15" font="4">DB4</text>
+<text top="573" left="325" width="66" height="15" font="4">0.97/0.91</text>
+<text top="573" left="410" width="66" height="15" font="4">0.96/0.93</text>
+<text top="573" left="494" width="66" height="15" font="4">0.82/0.99</text>
+<text top="573" left="588" width="66" height="15" font="4">0.85/0.95</text>
+<text top="594" left="264" width="32" height="15" font="4">DB5</text>
+<text top="594" left="325" width="66" height="15" font="4">0.93/0.75</text>
+<text top="594" left="410" width="66" height="15" font="4">0.90/0.95</text>
+<text top="594" left="494" width="66" height="15" font="4">0.67/0.99</text>
+<text top="594" left="588" width="66" height="15" font="4">0.79/0.96</text>
+<text top="615" left="264" width="32" height="15" font="4">DB6</text>
+<text top="615" left="325" width="66" height="15" font="4">0.96/0.76</text>
+<text top="615" left="410" width="66" height="15" font="4">0.96/0.81</text>
+<text top="615" left="494" width="66" height="15" font="4">0.33/1.00</text>
+<text top="615" left="588" width="66" height="15" font="4">0.40/0.96</text>
+<text top="636" left="264" width="32" height="15" font="4">DB7</text>
+<text top="636" left="325" width="66" height="15" font="4">0.91/0.85</text>
+<text top="636" left="410" width="66" height="15" font="4">0.73/0.89</text>
+<text top="636" left="494" width="66" height="15" font="4">0.44/0.94</text>
+<text top="636" left="588" width="66" height="15" font="4">0.42/0.89</text>
+<text top="660" left="266" width="29" height="15" font="4">LT1</text>
+<text top="660" left="325" width="66" height="15" font="4">0.96/0.87</text>
+<text top="660" left="410" width="66" height="15" font="4">0.96/0.90</text>
+<text top="660" left="494" width="66" height="15" font="4">0.92/1.00</text>
+<text top="660" left="588" width="66" height="15" font="4">0.94/0.91</text>
+<text top="681" left="266" width="29" height="15" font="4">LT2</text>
+<text top="681" left="325" width="66" height="15" font="4">1.00/0.92</text>
+<text top="681" left="410" width="66" height="15" font="4">1.00/1.00</text>
+<text top="681" left="494" width="66" height="15" font="4">0.12/1.00</text>
+<text top="681" left="588" width="66" height="15" font="4">0.12/1.00</text>
+<text top="702" left="266" width="29" height="15" font="4">LT3</text>
+<text top="702" left="325" width="66" height="15" font="4">1.00/0.11</text>
+<text top="702" left="410" width="66" height="15" font="4">1.00/0.17</text>
+<text top="702" left="494" width="66" height="15" font="4">0.18/1.00</text>
+<text top="702" left="588" width="66" height="15" font="4">0.94/0.83</text>
+<text top="723" left="266" width="29" height="15" font="4">LT4</text>
+<text top="723" left="325" width="66" height="15" font="4">0.81/0.62</text>
+<text top="723" left="410" width="66" height="15" font="4">0.86/0.90</text>
+<text top="723" left="494" width="66" height="15" font="4">0.21/1.00</text>
+<text top="723" left="588" width="66" height="15" font="4">0.74/0.95</text>
+<text top="744" left="266" width="29" height="15" font="4">LT5</text>
+<text top="744" left="325" width="66" height="15" font="4">1.00/0.29</text>
+<text top="744" left="410" width="66" height="15" font="4">1.00/1.00</text>
+<text top="744" left="494" width="66" height="15" font="4">0.07/1.00</text>
+<text top="744" left="588" width="66" height="15" font="4">1.00/1.00</text>
+<text top="765" left="266" width="29" height="15" font="4">LT6</text>
+<text top="765" left="325" width="66" height="15" font="4">0.77/0.65</text>
+<text top="765" left="410" width="66" height="15" font="4">0.76/0.67</text>
+<text top="765" left="494" width="66" height="15" font="4">0.31/0.97</text>
+<text top="765" left="588" width="66" height="15" font="4">0.26/0.81</text>
+<text top="786" left="266" width="29" height="15" font="4">LT7</text>
+<text top="786" left="325" width="66" height="15" font="4">0.84/0.88</text>
+<text top="786" left="410" width="66" height="15" font="4">0.83/0.88</text>
+<text top="786" left="494" width="66" height="15" font="4">0.83/0.88</text>
+<text top="786" left="588" width="66" height="15" font="4">0.83/0.88</text>
+<text top="820" left="328" width="257" height="15" font="4">Table 7: Precision and recall results</text>
+<text top="1069" left="451" width="16" height="15" font="4">35</text>
+</page>
+<page number="36" position="absolute" top="0" left="0" height="1188" width="918">
+<text top="325" left="283" width="44" height="15" font="4">Query</text>
+<text top="315" left="458" width="69" height="15" font="4">Approach</text>
+<text top="335" left="350" width="38" height="15" font="4">MAP</text>
+<text top="335" left="407" width="53" height="15" font="4">k-MAP</text>
+<text top="335" left="478" width="58" height="15" font="4">FullSFA</text>
+<text top="338" left="558" width="77" height="14" font="4">Staccato</text>
+<text top="360" left="289" width="32" height="15" font="4">CA1</text>
+<text top="360" left="354" width="29" height="15" font="4">0.17</text>
+<text top="360" left="419" width="29" height="15" font="4">0.82</text>
+<text top="360" left="488" width="37" height="15" font="4">81.54</text>
+<text top="360" left="582" width="29" height="15" font="4">4.38</text>
+<text top="381" left="289" width="32" height="15" font="4">CA2</text>
+<text top="381" left="354" width="29" height="15" font="4">0.17</text>
+<text top="381" left="419" width="29" height="15" font="4">0.96</text>
+<text top="381" left="488" width="37" height="15" font="4">91.84</text>
+<text top="381" left="582" width="29" height="15" font="4">4.93</text>
+<text top="402" left="289" width="32" height="15" font="4">CA3</text>
+<text top="402" left="354" width="29" height="15" font="4">0.17</text>
+<text top="402" left="419" width="29" height="15" font="4">0.96</text>
+<text top="402" left="488" width="37" height="15" font="4">91.85</text>
+<text top="402" left="582" width="29" height="15" font="4">4.94</text>
+<text top="423" left="289" width="32" height="15" font="4">CA4</text>
+<text top="423" left="354" width="29" height="15" font="4">0.17</text>
+<text top="423" left="419" width="29" height="15" font="4">0.89</text>
+<text top="423" left="488" width="37" height="15" font="4">86.72</text>
+<text top="423" left="582" width="29" height="15" font="4">4.63</text>
+<text top="444" left="289" width="32" height="15" font="4">CA5</text>
+<text top="444" left="354" width="29" height="15" font="4">0.18</text>
+<text top="444" left="419" width="29" height="15" font="4">1.16</text>
+<text top="444" left="484" width="45" height="15" font="4">106.17</text>
+<text top="444" left="582" width="29" height="15" font="4">5.97</text>
+<text top="465" left="289" width="32" height="15" font="4">CA6</text>
+<text top="465" left="354" width="29" height="15" font="4">0.18</text>
+<text top="465" left="419" width="29" height="15" font="4">1.17</text>
+<text top="465" left="484" width="45" height="15" font="4">125.63</text>
+<text top="465" left="582" width="29" height="15" font="4">5.98</text>
+<text top="486" left="289" width="32" height="15" font="4">CA7</text>
+<text top="486" left="354" width="29" height="15" font="4">0.18</text>
+<text top="486" left="419" width="29" height="15" font="4">1.05</text>
+<text top="486" left="484" width="45" height="15" font="4">150.35</text>
+<text top="486" left="582" width="29" height="15" font="4">5.40</text>
+<text top="510" left="289" width="32" height="15" font="4">DB1</text>
+<text top="510" left="354" width="29" height="15" font="4">0.07</text>
+<text top="510" left="419" width="29" height="15" font="4">0.44</text>
+<text top="510" left="488" width="37" height="15" font="4">56.42</text>
+<text top="510" left="582" width="29" height="15" font="4">1.61</text>
+<text top="531" left="289" width="32" height="15" font="4">DB2</text>
+<text top="531" left="354" width="29" height="15" font="4">0.07</text>
+<text top="531" left="419" width="29" height="15" font="4">0.51</text>
+<text top="531" left="488" width="37" height="15" font="4">62.89</text>
+<text top="531" left="582" width="29" height="15" font="4">1.81</text>
+<text top="552" left="289" width="32" height="15" font="4">DB3</text>
+<text top="552" left="354" width="29" height="15" font="4">0.07</text>
+<text top="552" left="419" width="29" height="15" font="4">0.43</text>
+<text top="552" left="488" width="37" height="15" font="4">54.92</text>
+<text top="552" left="582" width="29" height="15" font="4">1.59</text>
+<text top="573" left="289" width="32" height="15" font="4">DB4</text>
+<text top="573" left="354" width="29" height="15" font="4">0.07</text>
+<text top="573" left="419" width="29" height="15" font="4">0.40</text>
+<text top="573" left="488" width="37" height="15" font="4">51.45</text>
+<text top="573" left="582" width="29" height="15" font="4">1.48</text>
+<text top="594" left="289" width="32" height="15" font="4">DB5</text>
+<text top="594" left="354" width="29" height="15" font="4">0.07</text>
+<text top="594" left="419" width="29" height="15" font="4">0.42</text>
+<text top="594" left="488" width="37" height="15" font="4">40.72</text>
+<text top="594" left="582" width="29" height="15" font="4">1.21</text>
+<text top="615" left="289" width="32" height="15" font="4">DB6</text>
+<text top="615" left="354" width="29" height="15" font="4">0.07</text>
+<text top="615" left="419" width="29" height="15" font="4">0.35</text>
+<text top="615" left="484" width="45" height="15" font="4">619.31</text>
+<text top="615" left="582" width="29" height="15" font="4">1.39</text>
+<text top="636" left="289" width="32" height="15" font="4">DB7</text>
+<text top="636" left="354" width="29" height="15" font="4">0.07</text>
+<text top="636" left="419" width="29" height="15" font="4">0.31</text>
+<text top="636" left="480" width="54" height="15" font="4">1738.78</text>
+<text top="636" left="582" width="29" height="15" font="4">1.37</text>
+<text top="660" left="291" width="29" height="15" font="4">LT1</text>
+<text top="660" left="354" width="29" height="15" font="4">0.14</text>
+<text top="660" left="419" width="29" height="15" font="4">0.73</text>
+<text top="660" left="488" width="37" height="15" font="4">83.78</text>
+<text top="660" left="582" width="29" height="15" font="4">3.27</text>
+<text top="681" left="291" width="29" height="15" font="4">LT2</text>
+<text top="681" left="354" width="29" height="15" font="4">0.13</text>
+<text top="681" left="419" width="29" height="15" font="4">0.59</text>
+<text top="681" left="488" width="37" height="15" font="4">69.68</text>
+<text top="681" left="582" width="29" height="15" font="4">2.72</text>
+<text top="702" left="291" width="29" height="15" font="4">LT3</text>
+<text top="702" left="354" width="29" height="15" font="4">0.14</text>
+<text top="702" left="419" width="29" height="15" font="4">0.71</text>
+<text top="702" left="488" width="37" height="15" font="4">79.76</text>
+<text top="702" left="582" width="29" height="15" font="4">3.10</text>
+<text top="723" left="291" width="29" height="15" font="4">LT4</text>
+<text top="723" left="354" width="29" height="15" font="4">0.14</text>
+<text top="723" left="419" width="29" height="15" font="4">0.65</text>
+<text top="723" left="488" width="37" height="15" font="4">74.58</text>
+<text top="723" left="582" width="29" height="15" font="4">2.90</text>
+<text top="744" left="291" width="29" height="15" font="4">LT5</text>
+<text top="744" left="354" width="29" height="15" font="4">0.14</text>
+<text top="744" left="419" width="29" height="15" font="4">0.85</text>
+<text top="744" left="488" width="37" height="15" font="4">93.35</text>
+<text top="744" left="582" width="29" height="15" font="4">3.72</text>
+<text top="765" left="291" width="29" height="15" font="4">LT6</text>
+<text top="765" left="354" width="29" height="15" font="4">0.14</text>
+<text top="765" left="419" width="29" height="15" font="4">1.02</text>
+<text top="765" left="484" width="45" height="15" font="4">155.45</text>
+<text top="765" left="582" width="29" height="15" font="4">4.52</text>
+<text top="786" left="291" width="29" height="15" font="4">LT7</text>
+<text top="786" left="354" width="29" height="15" font="4">0.15</text>
+<text top="786" left="419" width="29" height="15" font="4">1.00</text>
+<text top="786" left="484" width="45" height="15" font="4">887.19</text>
+<text top="786" left="582" width="29" height="15" font="4">4.23</text>
+<text top="820" left="271" width="369" height="15" font="4">Table 8: Runtime results. Runtimes are in seconds.</text>
+<text top="1069" left="451" width="16" height="15" font="4">36</text>
+</page>
+</pdf2xml>
